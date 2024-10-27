@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talha - Whack-a-mole Game</title>
+    <link rel="stylesheet" href="style4.css" />
+    <link rel="icon" href="https://i.ibb.co/M6KTWnf/pic.jpg" />
+    <style>
+      h1{
+          text-align: center;
+          font-size: 50px;
+      }
+      .navbar ul{
+          
+          list-style-type: none;
+          /* padding: 0px;
+          margin: 0px; */
+          align-items: center;
+          margin-left: 30%;
+          margin-right: 25%;
+          background-color: rgb(250, 9, 9);
+          overflow: hidden;
+      }
+      .navbar a{
+          color: white;
+          width: 150px;
+          font-size: 25px;
+          font-weight: bold;
+          font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-decoration: none;
+          padding: 10px;
+          display: block;
+          border-right: 2px dashed black;
+          text-align: center;
+      }
+      .navbar .active {
+        border-left: 2px dashed black;
+        margin-left: 130px;
+      }
+      .navbar a:hover{
+          background-color: black;
+      }
+      .navbar li{
+      float: left;
+      }
+      
+          </style>
+  </head>
+
+  <body>
+    <h1>Welcome to my website</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="game.html">Game 1</a></li>
+            <li><a href="game2.html">Game 2</a></li>
+            <li><a href="game3.html">Game 3</a></li>
+            <li><a href="game4.html">Game 4</a></li>
+        </ul>
+    </nav>
+
+    <h1>Whack-a-mole!</h1>
+    <h2>Score: <span class="score">0</span></h2>
+    <button id="start" onClick="startGame()">Start</button>
+    <div class="game">
+      <div class="hole hole1">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6">
+        <div class="mole"></div>
+      </div>
+    </div>
+    <script src="script4.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Memory Card Game 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.navbar ul{
+    
+    list-style-type: none;
+    /* padding: 0px;
+    margin: 0px; */
+    align-items: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(250, 9, 9);
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    width: 150px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-right: 2px dashed black;
+    text-align: center;
+}
+.navbar .active {
+  border-left: 2px dashed black;
+  margin-left: 130px;
+}
+.navbar a:hover{
+    background-color: black;
+}
+.navbar li{
+float: left;
+}
+
+    </style>
+  </head>
+  <body>
+   
+    <h1>Welcome to my website</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="game.html">Game 1</a></li>
+            <li><a href="game2.html">Game 2</a></li>
+            <li><a href="game3.html">Game 3</a></li>
+            <li><a href="game4.html">Game 4</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="name">
+      <img src="./images/p2-removebg-preview.png" alt="" />
+      <img src="./images/r2-removebg-preview.png" alt="" />
+      <img src="./images/a-removebg-preview.png" alt="" />
+      <img src="./images/n-removebg-preview.png" alt="" />
+      <img src="./images/a-removebg-preview.png" alt="" />
+      <img src="./images/y2-removebg-preview.png" alt="" />
+    </div>
+    <h1 id="h1">Memory Cards</h1>
+    <div class="grid-container"></div>
+    <p>Score: <span class="score"></span></p>
+    <div class="actions">
+      <button onclick="restart()">Restart</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
